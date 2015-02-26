@@ -3,8 +3,8 @@ var express = require('express');
 var router = express.Router();
 
 // Routes
-router.get('/products', function(req, res){
-	res.send('API is working');
+router.get('/version', function(req, res){
+	res.send('Version 0.0.1');
 });
 
 // Return router

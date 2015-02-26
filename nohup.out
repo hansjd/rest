@@ -1,0 +1,31 @@
+26 Feb 15:59:55 - [33m[nodemon] v1.3.7[39m
+26 Feb 15:59:55 - [33m[nodemon] to restart at any time, enter `rs`[39m
+26 Feb 15:59:55 - [33m[nodemon] watching: *.*[39m
+26 Feb 15:59:55 - [32m[nodemon] starting `node server.js`[39m
+exception in nodemon killing node
+Error: EBADF, read
+
+----------------------------------------------------------
+If appropriate, please file an error with the output from:
+$ node /usr/bin/nodemon server.js --dump
+At http://github.com/remy/nodemon/issues/new
+----------------------------------------------------------
+
+{ [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+API is running on port 1337
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at EventEmitter.app.listen (/home/localadmin/Dev/rest/node_modules/express/lib/application.js:595:24)
+    at Object.<anonymous> (/home/localadmin/Dev/rest/server.js:19:5)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
